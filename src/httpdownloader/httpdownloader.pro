@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cc \
     basewindow.cc \
-    window.cc
+    window.cc \
+    taskwindow.cpp
 
 HEADERS += \
     basewindow.hpp \
-    window.hpp
+    window.hpp \
+    taskwindow.h
 
 RESOURCES += \
     qtresource.qrc

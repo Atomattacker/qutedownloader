@@ -6,6 +6,7 @@
         <file alias="download">resources/images/download.png</file>
         <file alias="close">resources/images/close.png</file>
         <file alias="minimize">resources/images/minimize.png</file>
+        <file alias="folder">resources/images/folder.png</file>
     </qresource>
     <qresource prefix="/qss">
         <file alias="style">resources/qss/style.qss</file>

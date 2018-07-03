@@ -4,12 +4,14 @@
 #include <QFile>
 #include <QIcon>
 #include <QDebug>
+#include <QDir>
 
 static QString getStyleSheet();
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    QDir::setCurrent(QApplication::applicationDirPath());
     QApplication::setWindowIcon(QIcon(":/images/download"));
     Window w;
     w.resize(500,360);

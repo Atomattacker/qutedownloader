@@ -28,6 +28,10 @@ private:
     void initComponents();
     void connectSignals();
 
+    void addTask();
+    void clearTasks();
+    void handleSettingClicked();
+
 private:
     QToolButton *tbtn_addtask;
     QToolButton *tbtn_cleartasks;

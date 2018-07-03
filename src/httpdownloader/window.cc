@@ -1,4 +1,5 @@
 #include "window.hpp"
+#include "taskwindow.h"
 
 #include <QLabel>
 #include <QPushButton>
@@ -66,6 +67,23 @@ void Window::initComponents()
 }
 
 void Window::connectSignals()
+{
+    QObject::connect(tbtn_addtask,&QToolButton::clicked,this,&Window::addTask);
+    QObject::connect(tbtn_cleartasks,&QToolButton::clicked,this,&Window::clearTasks);
+    QObject::connect(tbtn_setting,&QToolButton::clicked,this,&Window::handleSettingClicked);
+}
+
+void Window::addTask()
+{
+
+}
+
+void Window::clearTasks()
+{
+
+}
+
+void Window::handleSettingClicked()
 {
 
 }

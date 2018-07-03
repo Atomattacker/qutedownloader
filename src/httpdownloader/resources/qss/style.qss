@@ -25,7 +25,12 @@ QPushButton#close_button:hover{
     background:rgb(190,53,39);
 }
 
+QWidget#content_widget{
+    background:qlineargradient(x1:0 y1:0, x2:0 y2:-1, stop:0 rgb(234,243,250), stop:0.5 rgb(227,240,249) , stop:1 rgb(223,240,255));
+}
+
 QWidget#tool_widget{
+    border-bottom:1px solid rgb(179,175,221);
     background:qlineargradient(x1:0 y1:0, x2:0 y2:-1, stop:0 rgb(213,231,251), stop:0.5 rgb(190,214,238) , stop:1 rgb(179,199,223));
 }
 
@@ -38,6 +43,18 @@ QWidget#tool_widget QToolButton:hover{
 }
 
 QListWidget{
-    background:rgb(219,226,232)
+    border:none;
+    background:qlineargradient(x1:0 y1:0, x2:0 y2:-1, stop:0 rgb(234,243,250), stop:0.5 rgb(227,240,249) , stop:1 rgb(223,240,255));
+}
+
+
+/*****TaskWindow******/
+
+QPushButton#selectpath_button{
+    background:transparent;
+}
+
+QPushButton#selectpath_button:hover{
+    background:rgb(255,255,255,35%);
 }
 
