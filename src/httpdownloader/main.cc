@@ -1,4 +1,4 @@
-#include "widget.hpp"
+#include "window.hpp"
 #include <QApplication>
 #include <QTextCodec>
 #include <QFile>
@@ -10,9 +10,8 @@ static QString getStyleSheet();
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
     QApplication::setWindowIcon(QIcon(":/images/download"));
-    Widget w;
+    Window w;
     w.resize(500,360);
     w.setStyleSheet(getStyleSheet());
     w.show();

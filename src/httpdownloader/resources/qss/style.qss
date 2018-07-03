@@ -25,21 +25,19 @@ QPushButton#close_button:hover{
     background:rgb(190,53,39);
 }
 
-QWidget#content_widget{
-    background:white;
+QWidget#tool_widget{
+    background:qlineargradient(x1:0 y1:0, x2:0 y2:-1, stop:0 rgb(213,231,251), stop:0.5 rgb(190,214,238) , stop:1 rgb(179,199,223));
 }
 
-
-QPushButton#btn_clear, #btn_add, #btn_setting{
+QWidget#tool_widget QToolButton{
     background:transparent;
 }
 
-QPushButton#btn_clear{
-    image:url(":/imges/clear");
+QWidget#tool_widget QToolButton:hover{
+    background:rgb(255,255,255,35%);
 }
-QPushButton#btn_add{
-    image:url(":/imges/add");
+
+QListWidget{
+    background:rgb(219,226,232)
 }
-QPushButton#btn_setting{
-    image:url(":/imges/setting");
-}
+

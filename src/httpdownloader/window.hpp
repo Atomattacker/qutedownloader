@@ -1,4 +1,4 @@
-#ifndef WIDGET_HPP
+#ifndef WINDOW_HPP
 #define WIDGET_HPP
 
 #include "basewindow.hpp"
@@ -13,13 +13,13 @@ class QToolButton;
 class QListWidget;
 
 
-class Widget : public BaseWindow
+class Window : public BaseWindow
 {
     Q_OBJECT
 
 public:
-    explicit Widget(QWidget *parent = nullptr);
-    ~Widget();
+    explicit Window(QWidget *parent = nullptr);
+    ~Window();
 
 private slots:
 

@@ -25,12 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cc \
-        widget.cc \
-    basewindow.cc
+    basewindow.cc \
+    window.cc
 
 HEADERS += \
-        widget.hpp \
-    basewindow.hpp
+    basewindow.hpp \
+    window.hpp
 
 RESOURCES += \
     qtresource.qrc
