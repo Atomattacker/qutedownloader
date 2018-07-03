@@ -1,0 +1,45 @@
+QWidget#basewindow{
+    background:qlineargradient(x1:0 y1:0, x2:0 y2:-1, stop:0 rgb(103,144,188), stop:0.1 rgb(75,118,164), stop:1 rgb(66,109,155));
+}
+
+QLabel#window_title{
+    color:#eee;
+    margin-left:2px;
+}
+
+QPushButton#minimize_button{
+    background:transparent;
+    qproperty-icon:url(":/images/minimize");
+}
+
+QPushButton#minimize_button:hover{
+    background:rgb(24,140,215);
+}
+
+QPushButton#close_button{
+    background:transparent;
+    image:url(":/images/close");
+}
+
+QPushButton#close_button:hover{
+    background:rgb(190,53,39);
+}
+
+QWidget#content_widget{
+    background:white;
+}
+
+
+QPushButton#btn_clear, #btn_add, #btn_setting{
+    background:transparent;
+}
+
+QPushButton#btn_clear{
+    image:url(":/imges/clear");
+}
+QPushButton#btn_add{
+    image:url(":/imges/add");
+}
+QPushButton#btn_setting{
+    image:url(":/imges/setting");
+}

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="setting">resources/images/setting.png</file>
+        <file alias="add">resources/images/add.png</file>
+        <file alias="clear">resources/images/clear.png</file>
+        <file alias="download">resources/images/download.png</file>
+        <file alias="close">resources/images/close.png</file>
+        <file alias="minimize">resources/images/minimize.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file alias="style">resources/qss/style.qss</file>
+    </qresource>
+</RCC>
