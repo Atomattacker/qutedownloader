@@ -58,3 +58,14 @@ QPushButton#selectpath_button:hover{
     background:rgb(255,255,255,35%);
 }
 
+QPushButton#download_button,#cancel_button{
+   /* border:1px solid rgb(179,175,221);*/
+    padding: 5px 8px;
+    background:rgb(156,179,200);
+}
+
+QPushButton#download_button:hover,#cancel_button:hover{
+
+    background:rgb(213,231,251);
+}
+

@@ -21,6 +21,8 @@ public:
 
     void setMinimizeVisible(bool visible);
 
+    void showModal();
+
 protected:
     virtual void onClose();
     void mousePressEvent(QMouseEvent *event) Q_DECL_OVERRIDE;

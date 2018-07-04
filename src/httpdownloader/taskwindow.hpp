@@ -12,8 +12,6 @@ class TaskWindow : public BaseWindow
 public:
     TaskWindow(QWidget *parent = nullptr);
 
-public:
-    void showModal();
 
 private:
     void initComponents();

@@ -35,6 +35,21 @@ void BaseWindow::setMinimizeVisible(bool visible)
     pbtn_minimize->setVisible(visible);
 }
 
+
+void BaseWindow::showModal()
+{
+    setWindowModality(Qt::ApplicationModal);
+    show();
+    if(QWidget *parent = parentWidget())
+    {
+        const QRect &rect = parent->geometry();
+        int x = (rect.width()-this->width())/2+rect.x();
+        int y = (rect.height()-this->height())/2+rect.y();
+        move(x,y);
+    }
+
+}
+
 void BaseWindow::onClose()
 {
 

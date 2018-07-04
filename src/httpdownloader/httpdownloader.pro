@@ -27,12 +27,14 @@ SOURCES += \
         main.cc \
     basewindow.cc \
     window.cc \
-    taskwindow.cpp
+    taskwindow.cc \
+    utils/downloader.cc
 
 HEADERS += \
     basewindow.hpp \
     window.hpp \
-    taskwindow.h
+    taskwindow.hpp \
+    utils/downloader.hpp
 
 RESOURCES += \
     qtresource.qrc

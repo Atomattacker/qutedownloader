@@ -1,5 +1,5 @@
 #include "window.hpp"
-#include "taskwindow.h"
+#include "taskwindow.hpp"
 
 #include <QLabel>
 #include <QPushButton>
@@ -73,9 +73,18 @@ void Window::connectSignals()
     QObject::connect(tbtn_setting,&QToolButton::clicked,this,&Window::handleSettingClicked);
 }
 
+
+static TaskWindow *taskwnd = 0;
+
 void Window::addTask()
 {
-
+    if(taskwnd)
+    {
+        taskwnd->deleteLater();
+    }
+    auto wnd = new TaskWindow(this);
+    taskwnd = wnd;
+    wnd->showModal();
 }
 
 void Window::clearTasks()

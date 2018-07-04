@@ -1,10 +1,11 @@
-#include "taskwindow.h"
+#include "taskwindow.hpp"
 
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QFileDialog>
 
 #include <QDebug>
 
@@ -13,22 +14,6 @@ TaskWindow::TaskWindow(QWidget *parent):
 {
     initComponents();
     connectSignals();
-}
-
-void TaskWindow::showModal()
-{
-    setWindowModality(Qt::ApplicationModal);
-    this->show();
-    if(QWidget *parent = parentWidget())
-    {
-        const QRect &rect = parent->geometry();
-        qDebug()<<rect<<",w="<<this->width()<<",h="<<this->height();
-
-        int x = (rect.width()-this->width())/2+rect.x();
-        int y = (rect.height()-this->height())/2+rect.y();
-        move(x,y);
-    }
-
 }
 
 void TaskWindow::initComponents()
@@ -86,8 +71,9 @@ void TaskWindow::connectSignals()
 
 void TaskWindow::selectPath()
 {
-
+    le_savepath->setText(QFileDialog::getExistingDirectory(this));
 }
+
 void TaskWindow::startDownload()
 {
 
